@@ -8,11 +8,12 @@ import { AllUsers } from "../pages/AllUsers/AllUsers";
 import Avatar from "../pages/Avatar/Avatar";
 import Ads from "../pages/Ads/Ads";
 import RefferalRewards from "../pages/RefferalRewards/RefferalRewards";
-import Admin from "../pages/Admin/Admin";
+
 import Privacy from "../pages/Privacy/Privacy";
 import Terms from "../pages/Terms/Terms";
 import Contact from "../pages/Contact/Contact";
 import Faq from "../pages/Faq/Faq";
+import { Admin } from "../pages/Admin/Admin";
 
 const router = createBrowserRouter([
 //   {
