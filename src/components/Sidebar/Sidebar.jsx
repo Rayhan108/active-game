@@ -39,7 +39,7 @@ export function Sidebar({ toggleSidebar, isOpen }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate(); //  Added useNavigate
-
+const user = true
   // Helper function to check if the current path is active
   const isActive = (path) => location.pathname === path;
 

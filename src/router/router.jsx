@@ -16,29 +16,30 @@ import Faq from "../pages/Faq/Faq";
 import { Admin } from "../pages/Admin/Admin";
 import Profile from "../pages/Profile/Profile";
 import ChangePassword from "../pages/ChangePassword/ChangePassword";
-import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
+
+import Login from "../pages/Auth/Login/Login";
+import ResetPass from "../pages/Auth/ResetPass/ResetPass";
+import Otp from "../pages/Auth/Otp/Otp";
+import ForgetPass from "../pages/Auth/ForgetPass/ForgetPass";
+
 
 const router = createBrowserRouter([
-//   {
-//     path: "/sign-in",
-//     element: <Signin />,
-//   },
-//   {
-//     path: "/verify",
-//     element: <Verify />,
-//   },
-//   {
-//     path: "/passReset",
-//     element: <PassReset />,
-//   },
-//   {
-//     path: "/forget-password",
-//     element: <ForgotPass />,
-//   },
-//   {
-//     path: "/setPass",
-//     element: <SetPass />,
-//   },
+  {
+        path: "/login",
+        element: <Login/>,
+      },
+      {
+        path: "/otp",
+        element: <Otp/>,
+      },
+      {
+        path: "/forgetPass",
+        element: <ForgetPass/>,
+      },
+      {
+        path: "/resetPass",
+        element: <ResetPass/>,
+      },
   {
     path: "/",
     element: <PrivetRoutes><Main></Main></PrivetRoutes>,
@@ -65,6 +66,7 @@ const router = createBrowserRouter([
         path: "/ads",
         element: <Ads/>,
       },
+    
       {
         path: "/admin",
         element: <Admin />,
@@ -77,10 +79,7 @@ const router = createBrowserRouter([
         path: "/changePassword",
         element: <ChangePassword />,
       },
-      {
-        path: "/forgetPassword",
-        element: <ForgetPassword />,
-      },
+    
       {
         path: "/settings/privacy-policy",
         element: <Privacy />,
