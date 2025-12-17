@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.png'
 import avatar from '../../assets/avatar.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,6 +20,7 @@ const MainHeader = ({ toggleSidebar }) => {
 
       <div className="flex items-center gap-3">
         <span className="text-xl text-white font-poppins ">Cole Salle</span>
+        <Link to={'/profile'}>
         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center overflow-hidden">
           <img
             src={avatar}
@@ -26,6 +28,7 @@ const MainHeader = ({ toggleSidebar }) => {
             className="w-full h-full object-cover"
           />
         </div>
+        </Link>
         {/* <ChevronDown className="w-4 h-4 text-gray-400" /> */}
       </div>
     </header>

@@ -14,6 +14,9 @@ import Terms from "../pages/Terms/Terms";
 import Contact from "../pages/Contact/Contact";
 import Faq from "../pages/Faq/Faq";
 import { Admin } from "../pages/Admin/Admin";
+import Profile from "../pages/Profile/Profile";
+import ChangePassword from "../pages/ChangePassword/ChangePassword";
+import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
 
 const router = createBrowserRouter([
 //   {
@@ -65,6 +68,18 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/changePassword",
+        element: <ChangePassword />,
+      },
+      {
+        path: "/forgetPassword",
+        element: <ForgetPassword />,
       },
       {
         path: "/settings/privacy-policy",
