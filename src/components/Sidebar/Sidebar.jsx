@@ -39,7 +39,7 @@ export function Sidebar({ toggleSidebar, isOpen }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate(); //  Added useNavigate
-const user = true
+
   // Helper function to check if the current path is active
   const isActive = (path) => location.pathname === path;
 
@@ -50,7 +50,9 @@ const user = true
 
   // Handle toggling of the settings dropdown
   const toggleSettingsDropdown = () => setSettingsOpen(!settingsOpen);
-
+const handleLogout=()=>{
+    navigate("/login");
+}
   return (
     <div className="bg-[#0d0d1a] border-r border-gray-800 flex flex-col h-full">
       {/* Menu Items */}
@@ -139,9 +141,7 @@ const user = true
       <div className="p-3 border-t border-gray-800">
         <button
           onClick={() => {
-            // Handle logout logic here
-            console.log("Logging out...");
-            // navigate("/sign-in");
+            handleLogout()
           }}
           className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-red-500/10 hover:text-red-400 transition-colors"
         >
